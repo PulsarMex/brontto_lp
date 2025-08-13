@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.gn-back {
+    background-color: #ECECEC;
+}
+
+.orange-back {
+    background-color: #E87722;
+}
+
+.orange-text {
+    color: #E87722;
+}
+
+.title-text-color {
+    color: #1C2833;
+}
+
+.blue-back {
+    background-color: #22303C;
+}
