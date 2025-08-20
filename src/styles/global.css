@@ -1,24 +1,32 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+  font-family: 'Montserrat', ui-sans-serif, system-ui;
+}
+
 .gn-back {
-    background-color: #ECECEC;
+    background-color: #EDEDED;
 }
 
 .orange-back {
-    background-color: #E87722;
+    background-color: #F36F21;
 }
 
 .orange-text {
-    color: #E87722;
+    color: #F36F21;
 }
 
 .title-text-color {
-    color: #1C2833;
+    color: #1E3A5F;
 }
 
 .blue-back {
-    background-color: #22303C;
+    background-color: #1E3A5F;
+}
+
+.yellow-back {
+    background-color: #FFC300;
 }
 
 /*  */
