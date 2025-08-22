@@ -16,6 +16,7 @@
   <form
     name="cotizaciones_brontto"
     method="POST"
+    netlify-honeypot="bot-field"
     data-netlify="true"
     class="card bg-white p-8 max-w-3xl mx-auto"
   >
@@ -427,6 +428,16 @@
         >
       </div>
     </div>
+
+    
+    <input
+      type="hidden"
+      name="_subject"
+      value="Nuevo cuestionario desde la web"
+    />
+    <input type="hidden" name="_replyto" value="no-reply@brontto.com" />
+    <!-- <input type="hidden" name="_cc" value="gerencia@brontto.com" /> -->
+    <!-- <input type="hidden" name="_redirect" value="/gracias" /> -->
   </form>
 </section>
 
