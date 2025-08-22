@@ -3,6 +3,11 @@
 
 html {
   font-family: 'Montserrat', ui-sans-serif, system-ui;
+  scroll-behavior: smooth;
+}
+
+#questions {
+  scroll-margin-top: 50px;
 }
 
 .gn-back {
