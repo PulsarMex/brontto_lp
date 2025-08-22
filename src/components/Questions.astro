@@ -18,6 +18,7 @@
     method="POST"
     netlify-honeypot="bot-field"
     data-netlify="true"
+    data-netlify-recaptcha="true"
     class="card bg-white p-8 max-w-3xl mx-auto"
   >
     <input type="hidden" name="form-name" value="cotizaciones_brontto" />
@@ -415,12 +416,13 @@
           <label class="block mb-2">Correo</label>
           <input
             type="email"
-            name="correo_electronico"
+            name="email"
             placeholder="correo@ejemplo.com"
             class="input input-bordered w-full"
             required
           />
         </div>
+        <div data-netlify-recaptcha="true"></div>
         <button
           type="submit"
           class="btn orange-back border-none shadow-none text-white mt-7 w-full"
@@ -428,16 +430,6 @@
         >
       </div>
     </div>
-
-    
-    <input
-      type="hidden"
-      name="_subject"
-      value="Nuevo cuestionario desde la web"
-    />
-    <input type="hidden" name="_replyto" value="no-reply@brontto.com" />
-    <!-- <input type="hidden" name="_cc" value="gerencia@brontto.com" /> -->
-    <!-- <input type="hidden" name="_redirect" value="/gracias" /> -->
   </form>
 </section>
 
