@@ -1,0 +1,446 @@
+---
+
+---
+
+<section class="bg-[#1E3A5F]/20 py-20 px-4 sm:px-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl font-bold title-text-color mb-4">
+      Cuestionario para determinar el servicio adecuado
+    </h1>
+    <p class="text-gray-500 text-lg mb-8">
+      Ayúdenos completando este cuestionario; con su información podremos
+      recomendarle el equipo ideal y entregarle una cotización personalizada y
+      eficiente.
+    </p>
+  </div>
+  <form
+    name="cuestionario"
+    method="POST"
+    data-netlify="true"
+    class="card bg-white p-8 max-w-3xl mx-auto"
+  >
+    <input type="hidden" name="form-name" value="cuestionario" />
+
+    <div id="steps" class="space-y-6">
+      <div class="step m-0 p-0">
+        <label class="block font-bold text-xl text-gray-700"
+          >Tipo de trabajo a realizar</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Montaje de estructura metálica</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>Carga y descarga de maquinaria</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Colocación de prefabricados</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Maniobra en construcción</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Otro</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Peso estimado de la carga a mover</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Menos de 5 toneladas</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>Entre 5 y 20 toneladas</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Entre 20 y 50 toneladas</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Más de 50 toneladas</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Altura máxima de trabajo requerida (desde el suelo hasta el punto más
+          alto)</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Menos de 10 metros</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>Entre 10 y 25 metros</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Entre 25 y 50 metros</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Más de 50 metros</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Distancia horizontal entre la grúa y la carga (radio de trabajo)</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Menos de 5 metros</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>Entre 5 y 15 metros</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Más de 15 metros</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Tiempo estimado de uso de la grúa</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Por día</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>Por semana</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>Mensual</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Condiciones del terreno (puedes seleccionar más de una)</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="servicio"
+              value="Renta de Grúas"
+              class="checkbox checkbox-warning"
+            />
+            <span>Terreno plano y firme</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="servicio"
+              value="Renta de Grúas"
+              class="checkbox checkbox-warning"
+            />
+            <span>Terreno irregular</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="servicio"
+              value="Renta de Grúas"
+              class="checkbox checkbox-warning"
+            />
+            <span>Espacio reducido para maniobra</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="servicio"
+              value="Renta de Grúas"
+              class="checkbox checkbox-warning"
+            />
+            <span>Acceso complicado</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >¿La zona es de fácil acceso para maquinaria pesada?</label
+        >
+        <div class="flex gap-4 flex-wrap my-7">
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Grúas"
+              class="radio radio-warning"
+            />
+            <span>Sí</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Renta de Andamios"
+              class="radio radio-warning"
+            />
+            <span>No</span>
+          </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="servicio"
+              value="Retroexcavadora y Volteo"
+              class="radio radio-warning"
+            />
+            <span>No estoy seguro</span>
+          </label>
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Ubicación y fecha de la maniobra</label
+        >
+        <div class="mt-7">
+          <label class="block mb-2">Ciudad y estado</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Ciudad, Estado"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Dirección o punto de referencia</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Calle, Número, Colonia"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Fecha tentativa de la maniobra</label>
+          <input
+            type="date"
+            name="email"
+            placeholder="Fecha"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white next-btn mt-7"
+          >Siguiente
+        </button>
+      </div>
+
+      <div class="step m-0 p-0 hidden">
+        <label class="block font-bold text-xl text-gray-700"
+          >Datos de contacto</label
+        >
+        <div class="mt-7">
+          <label class="block mb-2">Nombre completo</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Tu nombre"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Teléfono</label>
+          <input
+            type="text"
+            name="nombre"
+            placeholder="+52 9931557709"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Correo</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="correo@ejemplo.com"
+            class="input input-bordered w-full"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn orange-back border-none shadow-none text-white mt-7 w-full"
+          >Enviar respuestas</button
+        >
+      </div>
+    </div>
+  </form>
+</section>
+
+<script type="module">
+  const steps = document.querySelectorAll(".step");
+  const nextBtns = document.querySelectorAll(".next-btn");
+
+  nextBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      steps[index].classList.add("hidden");
+      steps[index + 1].classList.remove("hidden");
+    });
+  });
+</script>
