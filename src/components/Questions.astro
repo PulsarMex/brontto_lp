@@ -7,11 +7,17 @@
     <h1 class="text-5xl font-bold title-text-color mb-4">
       Cuestionario para determinar el servicio adecuado
     </h1>
-    <p class="text-gray-500 text-lg mb-8">
+    <p class="text-gray-500 text-lg mb-5">
       Ayúdenos completando este cuestionario; con su información podremos
       recomendarle el equipo ideal y entregarle una cotización personalizada y
       eficiente.
     </p>
+    <div id="success-message" class=" text-green-600 font-semibold text-lg text-center p-3 mb-5">
+      ✅ ¡Gracias! Tu respuesta se envió con éxito.
+    </div>
+    <div id="error-message" class="hidden text-red-600 font-semibold text-lg text-center p-3 mb-5">
+      ❌ Hubo un error al enviar, intenta de nuevo.
+    </div>
   </div>
   <form
     name="cotizaciones_brontto"
@@ -28,6 +34,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Tipo de trabajo a realizar</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -86,6 +93,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Peso estimado de la carga a mover</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -136,6 +144,7 @@
           >Altura máxima de trabajo requerida (desde el suelo hasta el punto más
           alto)</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -185,6 +194,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Distancia horizontal entre la grúa y la carga (radio de trabajo)</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -225,6 +235,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Tiempo estimado de uso de la grúa</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -265,6 +276,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Condiciones del terreno (puedes seleccionar más de una)</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -314,6 +326,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >¿La zona es de fácil acceso para maquinaria pesada?</label
         >
+        <small class="text-gray-400">Opcional</small>
         <div class="flex gap-4 flex-wrap my-7">
           <label class="cursor-pointer flex items-center gap-2">
             <input
@@ -354,6 +367,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Ubicación y fecha de la maniobra</label
         >
+        <small class="text-gray-400">Opcionales</small>
         <div class="mt-7">
           <label class="block mb-2">Ciudad y estado</label>
           <input
@@ -392,6 +406,7 @@
         <label class="block font-bold text-xl text-gray-700"
           >Datos de contacto</label
         >
+        <small class="text-gray-400">Obligatorio</small>
         <div class="mt-7">
           <label class="block mb-2">Nombre completo</label>
           <input
@@ -442,5 +457,24 @@
       steps[index].classList.add("hidden");
       steps[index + 1].classList.remove("hidden");
     });
+  });
+
+  document.querySelector("form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        body: data,
+      });
+      form.reset();
+      document.getElementById("success-message").classList.remove("hidden");
+      document.getElementById("error-message").classList.add("hidden");
+    } catch (err) {
+      document.getElementById("error-message").classList.remove("hidden");
+      document.getElementById("success-message").classList.add("hidden");
+    }
   });
 </script>
