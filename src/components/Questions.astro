@@ -19,7 +19,6 @@
     netlify-honeypot="bot-field"
     data-netlify="true"
     data-netlify-recaptcha="true"
-    data-callback="enableSubmit"
     class="card bg-white p-8 max-w-3xl mx-auto"
   >
     <input type="hidden" name="form-name" value="cotizaciones_brontto" />
@@ -437,7 +436,7 @@
           id="submit-btn"
           type="submit"
           class="btn orange-back border-none shadow-none text-white mt-7 w-full"
-          disabled>Enviar respuestas</button
+          >Enviar respuestas</button
         >
       </div>
     </div>
@@ -459,11 +458,11 @@
 <script type="module">
   const steps = document.querySelectorAll(".step");
   const nextBtns = document.querySelectorAll(".next-btn");
-  const submitBtn = document.getElementById("submit-btn");
+  // const submitBtn = document.getElementById("submit-btn");
 
-  function enableSubmit() {
-    submitBtn.disabled = false;
-  }
+  // function enableSubmit() {
+  //   submitBtn.disabled = false;
+  // }
 
   nextBtns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
@@ -484,7 +483,7 @@
       });
       form.reset();
       grecaptcha.reset();
-      submitBtn.disabled = true;
+      // submitBtn.disabled = true;
       document.getElementById("success-message").classList.remove("hidden");
       document.getElementById("error-message").classList.add("hidden");
     } catch (err) {
