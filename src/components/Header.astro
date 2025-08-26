@@ -2,13 +2,15 @@
 
 ---
 
-<header class="navbar sticky top-0 z-50 h-24 px-4 sm:px-6 md:px-8 blue-back shadow-xl">
-  <div class="navbar-start">
-    <div class="dropdown">
+<header
+  class="navbar sticky top-0 z-50 h-24 px-4 sm:px-6 md:px-8 blue-back shadow-xl"
+>
+  <div class="navbar-start flex items-center">
+    <div class="dropdown lg:hidden">
       <div
         tabindex="0"
         role="button"
-        class="btn btn-outline btn-warning lg:hidden"
+        class="btn btn-outline border border-amber-600 hover:bg-amber-600 shadow-none"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,28 +30,20 @@
         tabindex="0"
         class="menu menu-xl dropdown-content rounded-box z-50 mt-3 w-60 p-2 bg-[#1C2833]"
       >
-        <li>
-          <a href="/#contact" class="text-lg text-white">Servicios</a>
-        </li>
+        <li><a href="/#contact" class="text-lg text-white">Servicios</a></li>
         <li>
           <a href="/#contact" class="text-lg text-white">Nuestro equipo</a>
         </li>
-        <li>
-          <a href="/#contact" class="text-lg text-white">Clientes</a>
-        </li>
-        <li>
-          <a href="/#contact" class="text-lg text-white">Cobertura</a>
-        </li>
-        <li>
-          <a href="/#contact" class="text-lg text-white">Contacto</a>
-        </li>
+        <li><a href="/#contact" class="text-lg text-white">Clientes</a></li>
+        <li><a href="/#contact" class="text-lg text-white">Cobertura</a></li>
+        <li><a href="/#contact" class="text-lg text-white">Contacto</a></li>
       </ul>
     </div>
     <a class="text-xl px-2" href="/">
       <img
         src="/logo_brontto_light.png"
         alt="Logo Brontto"
-        class="w-auto max-w-[253px]"
+        class="w-auto max-w-[180px] md:max-w-[253px]"
       />
     </a>
   </div>
@@ -78,12 +72,14 @@
       </li>
     </ul>
   </div>
-  <div class="navbar-end hidden sm:flex">
+
+  <div class="navbar-end lg:hidden">
     <div class="dropdown dropdown-bottom dropdown-left">
       <button
-        class="btn btn-lg text-lg font-bold text-white orange-back border-none shadow-none"
-        >Cotizar</button
+        class="btn btn-lg font-bold text-white orange-back border-none shadow-none px-5"
       >
+        Cotizar
+      </button>
       <ul
         tabindex="0"
         class="dropdown-content menu z-1 w-60 p-3 blue-back mb-2"
@@ -92,11 +88,13 @@
           <a
             href="https://wa.me/529931650533"
             target="_blank"
-            class="text-white text-sm">Escríbenos directamente a WhatsApp</a
+            class="text-white text-sm"
           >
-          <a class="text-white text-sm" href="#questions"
-            >Cotiza a través de nuestro cuestionario personalizado</a
-          >
+            Escríbenos directamente a WhatsApp
+          </a>
+          <a class="text-white text-sm" href="#questions">
+            Cotiza a través de nuestro cuestionario personalizado
+          </a>
         </li>
       </ul>
     </div>
