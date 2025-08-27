@@ -125,7 +125,21 @@
             />
             <span>Más de 50 toneladas</span>
           </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="tipo_de_trabajo"
+              value="Otro"
+              class="radio radio-warning"
+            />
+            <span>Otro</span>
+          </label>
         </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
         <button
           type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
@@ -176,7 +190,21 @@
             />
             <span>Más de 50 metros</span>
           </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="tipo_de_trabajo"
+              value="Otro"
+              class="radio radio-warning"
+            />
+            <span>Otro</span>
+          </label>
         </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
         <button
           type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
@@ -217,7 +245,21 @@
             />
             <span>Más de 15 metros</span>
           </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="tipo_de_trabajo"
+              value="Otro"
+              class="radio radio-warning"
+            />
+            <span>Otro</span>
+          </label>
         </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
         <button
           type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
@@ -258,7 +300,21 @@
             />
             <span>Mensual</span>
           </label>
+          <label class="cursor-pointer flex items-center gap-2">
+            <input
+              type="radio"
+              name="tipo_de_trabajo"
+              value="Otro"
+              class="radio radio-warning"
+            />
+            <span>Otro</span>
+          </label>
         </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
         <button
           type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
@@ -311,6 +367,11 @@
         </div>
         <button
           type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
+        <button
+          type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
           >Siguiente
         </button>
@@ -352,6 +413,11 @@
         </div>
         <button
           type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn"
+          >Atrás
+        </button>
+        <button
+          type="button"
           class="btn orange-back border-none shadow-none text-white next-btn"
           >Siguiente
         </button>
@@ -363,11 +429,49 @@
         >
         <small class="text-gray-400">Opcionales</small>
         <div class="mt-7">
-          <label class="block mb-2">Ciudad y estado</label>
+          <label class="block mb-2">Estado</label>
+          <select class="select select-bordered w-full">
+            <option value="">Selecciona un estado</option>
+            <option value="Aguascalientes">Aguascalientes</option>
+            <option value="Baja California">Baja California</option>
+            <option value="Baja California Sur">Baja California Sur</option>
+            <option value="Campeche">Campeche</option>
+            <option value="Chiapas">Chiapas</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Ciudad de México">Ciudad de México</option>
+            <option value="Coahuila">Coahuila</option>
+            <option value="Colima">Colima</option>
+            <option value="Durango">Durango</option>
+            <option value="Guanajuato">Guanajuato</option>
+            <option value="Guerrero">Guerrero</option>
+            <option value="Hidalgo">Hidalgo</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="México">México</option>
+            <option value="Michoacán">Michoacán</option>
+            <option value="Morelos">Morelos</option>
+            <option value="Nayarit">Nayarit</option>
+            <option value="Nuevo León">Nuevo León</option>
+            <option value="Oaxaca">Oaxaca</option>
+            <option value="Puebla">Puebla</option>
+            <option value="Querétaro">Querétaro</option>
+            <option value="Quintana Roo">Quintana Roo</option>
+            <option value="San Luis Potosí">San Luis Potosí</option>
+            <option value="Sinaloa">Sinaloa</option>
+            <option value="Sonora">Sonora</option>
+            <option value="Tabasco">Tabasco</option>
+            <option value="Tamaulipas">Tamaulipas</option>
+            <option value="Tlaxcala">Tlaxcala</option>
+            <option value="Veracruz">Veracruz</option>
+            <option value="Yucatán">Yucatán</option>
+            <option value="Zacatecas">Zacatecas</option>
+          </select>
+        </div>
+        <div class="mt-4">
+          <label class="block mb-2">Ciudad</label>
           <input
             type="text"
-            name="ciudad_y_estado"
-            placeholder="Ciudad, Estado"
+            name="ciudad"
+            placeholder="Villahermosa"
             class="input input-bordered w-full"
           />
         </div>
@@ -389,6 +493,11 @@
             class="input input-bordered w-full"
           />
         </div>
+        <button
+          type="button"
+          class="btn orange-back border-none shadow-none text-white prev-btn mt-7"
+          >Atrás
+        </button>
         <button
           type="button"
           class="btn orange-back border-none shadow-none text-white next-btn mt-7"
@@ -445,6 +554,9 @@
       class="hidden text-green-600 font-semibold text-lg text-center p-5"
     >
       ✅ ¡Gracias! Tu respuesta se envió con éxito.
+      <p class="text-gray-400 font-normal">
+        En breve, nuestro equipo se comunicará con usted.
+      </p>
     </div>
     <div
       id="error-message"
@@ -458,18 +570,44 @@
 <script type="module">
   const steps = document.querySelectorAll(".step");
   const nextBtns = document.querySelectorAll(".next-btn");
-  // const submitBtn = document.getElementById("submit-btn");
+  const prevBtns = document.querySelectorAll(".prev-btn");
 
-  // function enableSubmit() {
-  //   submitBtn.disabled = false;
-  // }
+  function changeStep(direction, currentIndex) {
+    // Oculta el step actual
+    steps[currentIndex].classList.add("hidden");
 
-  nextBtns.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-      steps[index].classList.add("hidden");
-      steps[index + 1].classList.remove("hidden");
+    // Calcula el nuevo índice
+    let newIndex = currentIndex + direction;
+
+    // Limita los índices
+    if (newIndex < 0) newIndex = 0;
+    if (newIndex >= steps.length) newIndex = steps.length - 1;
+
+    // Muestra el step correspondiente
+    steps[newIndex].classList.remove("hidden");
+
+    // Control de visibilidad de los botones Prev
+    steps.forEach((step, i) => {
+      const prevBtn = step.querySelector(".prev-btn");
+      if (prevBtn) prevBtn.style.display = i === 0 ? "none" : "inline-block";
     });
+  }
+
+  // Asignar eventos a botones Next
+  nextBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => changeStep(1, index));
   });
+
+  // Asignar eventos a botones Prev
+  prevBtns.forEach((btn, index) => {
+    btn.addEventListener("click", () => changeStep(-1, index + 1)); // index+1 porque Prev está en el step siguiente
+  });
+
+  // Inicializar: ocultar el Prev del primer step
+  document
+    .querySelectorAll(".step")[0]
+    .querySelectorAll(".prev-btn")
+    .forEach((btn) => (btn.style.display = "none"));
 
   document.querySelector("form").addEventListener("submit", async (e) => {
     e.preventDefault();
